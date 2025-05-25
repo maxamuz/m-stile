@@ -1,0 +1,454 @@
+body {
+  /* font-family: "Roboto Condensed", sans-serif; */
+  /* font-family: "Jost", sans-serif; */
+  font-family: "Open Sans", sans-serif;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+  font-weight: 400;
+  letter-spacing: 0.04rem;
+  font-family: "Montserrat", sans-serif;
+}
+
+.top-header {
+  background-color: #00507f;
+  color: #fff;
+  padding: 15px 0;
+}
+
+.phone-colum p {
+  text-align: right;
+}
+
+.social-wrapper {
+  display: grid;
+  grid-template-columns: 34px 34px;
+  gap: 5px;
+  justify-content: end;
+}
+
+.social-item a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.main-navigation {
+  background-color: #66b3e2;
+  padding: 12px 0;
+}
+
+.nav-menu .menu-item {
+  padding: 0 25px;
+}
+
+.nav-menu .menu-item a {
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 0.05rem;
+  position: relative;
+}
+
+.nav-menu .menu-item a:hover {
+  color: #ffffffd4;
+}
+
+.nav-menu .menu-item a:hover::after {
+  content: "";
+  height: 2px;
+  width: 100%;
+  background-color: #ffffffd4;
+  display: block;
+  position: absolute;
+}
+
+.buttom-item a {
+  color: #fff;
+  text-decoration: none;
+  text-align: center;
+  display: block;
+  text-transform: uppercase;
+  padding: 10px 0;
+  letter-spacing: 0.04rem;
+}
+
+.call-bottom {
+  background-color: #ed0050;
+  margin-bottom: 10px;
+}
+
+a.calc-bottom {
+  background-color: #ffe200;
+  color: #00507f;
+}
+
+a.calc-bottom:hover {
+  transform: scale(1.01);
+  filter: blur(0.15px);
+}
+
+a.call-bottom:hover {
+  transform: scale(1.01);
+  filter: blur(0.15px);
+}
+
+a.phone-item {
+  color: #fff;
+  text-decoration: none;
+}
+
+a.phone-item:hover {
+  color: #ffffffd4;
+  text-decoration: underline;
+}
+
+img.social-img:hover {
+  transform: scale(1.08);
+  filter: blur(0.15px);
+}
+
+/* Carousel */
+
+#carouselNpStyleCaptions {
+  .carousel-caption {
+    /* right: 50%; */
+    top: 5%;
+  }
+  h3 {
+    font-size: 51px;
+    text-align: left;
+    color: #00507f;
+    text-transform: uppercase;
+  }
+  .carousel-caption-header {
+    display: block;
+    text-align: left;
+    font-size: 40px;
+    text-transform: none;
+    margin-top: 15px;
+    color: #000;
+  }
+  .carousel-caption-price {
+    text-align: left;
+    font-size: 40px;
+    color: #000;
+    span {
+      color: #ed0050;
+      font-size: 64px;
+    }
+    .carousel-caption-currency {
+      font-size: 40px;
+    }
+  }
+  .carousel-caption-description {
+    text-align: left;
+    color: #000;
+    position: absolute;
+    bottom: 7%;
+    width: 220px;
+    font-size: 18px;
+    .carousel-caption-description-text {
+      font-size: 22px;
+    }
+    .carousel-caption-description-link {
+      text-decoration: none;
+      padding: 12px 15px;
+      display: block;
+      background-color: #ed0050;
+      text-align: center;
+      color: #fff;
+      text-transform: uppercase;
+      font-size: 16px;
+      margin-top: 20px;
+      &:hover {
+        transform: scale(1.02);
+      }
+    }
+  }
+}
+
+.home-title {
+  text-align: center;
+  padding: 55px 0;
+  color: #00507f;
+  text-transform: uppercase;
+}
+
+/* Блок "Почему выбирают нас" */
+
+.our-change {
+  background-color: #edf7ff;
+  padding-bottom: 35px;
+  .row {
+    .col {
+      .card {
+        border: none;
+        width: 14rem;
+        align-items: center;
+        background-color: inherit;
+        .card-img-top {
+          width: 55%;
+          border: 1px solid #ed0050;
+          padding: 30px;
+          border-radius: 0;
+          margin-bottom: 20px;
+        }
+        .card-text {
+          text-align: center;
+        }
+      }
+    }
+  }
+}
+
+/* Виды натяжных потолков */
+
+.types-of-ceilings {
+  padding-bottom: 75px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.custom-menu-container {
+  transition: all 0.3s ease-out;
+  .custom-menu {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+  }
+  li a {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #3498db;
+  }
+  a.active {
+    position: relative;
+    color: #ed0050;
+  }
+  a.active:after {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: #ed0050;
+  }
+}
+
+.menu-content-container {
+  margin-top: 65px;
+  .menu-content {
+    display: flex;
+    gap: 50px;
+  }
+  img {
+    flex: 0.5;
+  }
+  .content-text {
+    position: relative;
+    flex: 1;
+    h3 {
+      text-transform: uppercase;
+      color: #3498db;
+      font-size: 22px;
+    }
+    .excerpt {
+      margin-top: 50px;
+      font-family: "Montserrat", sans-serif;
+    }
+    a {
+      text-decoration: none;
+      position: absolute;
+      bottom: 0;
+      text-transform: uppercase;
+      padding: 10px 20px;
+      background-color: #00507f;
+      color: #fff;
+      &:hover {
+        transform: scale(1.02);
+      }
+    }
+  }
+}
+
+/* Калькулятор */
+
+.calculator {
+  background-color: #edf7ff;
+  .field-price {
+    display: none;
+  }
+  h3 {
+    text-transform: uppercase;
+    color: #fff;
+    text-align: center;
+  }
+  .ceiling-calculator p {
+    text-align: center;
+    font-size: 20px;
+    width: 470px;
+    margin: 18px auto;
+  }
+  .scc-body {
+    display: flex;
+    justify-content: space-around;
+  }
+}
+
+.calculator-wrapper {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.calculator-content {
+  padding: 50px 0;
+  .calculator-content-title {
+    text-align: center;
+    font-size: 20px;
+    padding: 20px 0;
+    text-transform: uppercase;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+}
+
+/* Слайдер отзывов */
+
+.review-card {
+  max-width: 1100px;
+  background: #edf7ff;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.review-text {
+  font-style: italic;
+  color: #555;
+}
+
+.carousel-indicators button {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #6c757d;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  filter: invert(70%);
+}
+
+.carousel-control-prev {
+  left: -40px;
+}
+
+.carousel-control-next {
+  right: -40px;
+}
+
+.rounded-circle {
+  border-radius: 50% !important;
+  max-width: 10%;
+}
+
+/* Отзывы наших клиентов */
+
+.reviews {
+  padding-bottom: 65px;
+}
+
+.home-title-paragraph {
+  text-align: left;
+  font-size: 20px;
+  padding: 15px 0;
+  color: #00507f;
+  text-transform: uppercase;
+}
+
+/* О нас */
+
+.about {
+  padding-bottom: 55px;
+}
+
+/* Этапы сотрудничества */
+
+.cooperation {
+  background-color: #edf7ff;
+  padding-bottom: 55px;
+}
+
+.cooperation-item {
+  display: flex;
+  gap: 27px;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cooperation-text {
+  text-align: center;
+  width: 120px;
+}
+
+.text-lite {
+  color: #949aa2;
+  margin-top: -25px;
+}
+
+/* Часто задаваемые вопросы */
+
+.questions {
+  background-color: #66b3e2;
+  padding-bottom: 65px;
+}
+
+.home-title-lite {
+  color: #fff;
+}
+
+button.accordion-button {
+  padding-left: 60px;
+  font-size: 20px;
+  color: #00507f;
+}
+
+.accordion-body {
+  padding-left: 60px;
+}
+
+.accordion-button:not(.collapsed) {
+  color: #00507f;
+  background-color: #fff;
+  box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.125);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 25px 0;
+}
+th,
+td {
+  border: 1px solid #ddd;
+  padding: 12px;
+  text-align: left;
+}
+th {
+  background-color: #66b3e2;
+  color: white;
+}
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.calc-bottom-questions {
+  width: 30%;
+}
+
+.center p {
+  padding-top: 25px;
+}
