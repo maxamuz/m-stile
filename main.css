@@ -410,6 +410,21 @@ html {
   color: #fff;
 }
 
+.accordion-item {
+  margin-bottom: 10px;
+  border: none;
+}
+
+.accordion-item:first-of-type .accordion-button {
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+.accordion-item:last-of-type {
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
 button.accordion-button {
   padding-left: 60px;
   font-size: 20px;
@@ -451,4 +466,34 @@ tr:nth-child(even) {
 
 .center p {
   padding-top: 25px;
+}
+
+/* Блок Оставить заявку */
+
+.bid {
+  background-color: #00507f;
+  color: #fff;
+}
+
+.bid-desc {
+  display: block;
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+.bid-form-container {
+  margin-top: 55px;
+}
+
+.bid-form-phone {
+  border: 1px solid #fff;
+  padding: 20px;
+}
+
+.bid-form-phone-desc{
+  margin-bottom: 20px;
+}
+
+.bid-form-phone-item {
+  font-size: 26px;
 }

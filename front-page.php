@@ -735,6 +735,38 @@ get_header();
     </div>
 </div>
 
+<div class="bid">
+    <div class="container">
+        <h3 class="text-center home-title home-title-lite">Оставьте заявку<span class="bid-desc">на замер и получите 4
+                бесплатные опции</span></h3>
+        <div class="row bid-container-option">
+            <div class="col bid-option">
+                <p class="text-center">Выезд замерщика</p>
+            </div>
+            <div class="col bid-option">
+                <p class="text-center">Проект вашего потолка</p>
+            </div>
+            <div class="col bid-option">
+                <p class="text-center">Точечнык светильники</p>
+            </div>
+            <div class="col bid-option">
+                <p class="text-center">Чистый монтаж</p>
+            </div>
+        </div>
+        <div class="row bid-form-container">
+            <div class="col bid-form-phone">
+                <p class="text-center bid-form-phone-desc">Позвонить нам по телефонам</p>
+                <p class="text-center bid-form-phone-item">8 (495) 142 86 56</p>
+                <p class="text-center bid-form-phone-item">8 (977) 715 58 00</p>
+            </div>
+            <div class="col-9">
+                <p class="text-center bid-form-phone-desc">Или оставьте данные и мы перезвоним вам</p>
+                <div class="bid-form">Form</div>
+            </div>
+        </div>
+    </div>
+</div>
+
 <main id="primary" class="site-main">
 
     <?php
