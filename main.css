@@ -12,6 +12,14 @@ p {
   font-family: "Montserrat", sans-serif;
 }
 
+input:focus,
+textarea:focus,
+select:focus {
+  outline: none; /* Отключает стандартный outline */
+  border: 1px solid blue; /* Пример кастомной границы */
+  box-shadow: 0 0 5px rgba(0, 0, 255, 0.3); /* Дополнительный эффект (опционально) */
+}
+
 .top-header {
   background-color: #00507f;
   color: #fff;
@@ -473,16 +481,29 @@ tr:nth-child(even) {
 .bid {
   background-color: #00507f;
   color: #fff;
+  padding-bottom: 65px;
 }
 
 .bid-desc {
   display: block;
   font-size: 20px;
-  margin-top: 10px;
+  margin-top: 20px;
+}
+
+.bid-container-option {
+  padding: 50px 0;
 }
 
 .bid-form-container {
   margin-top: 55px;
+}
+
+.bid-option p {
+  text-decoration: underline;
+}
+
+.bid-form {
+  padding-left: 30px;
 }
 
 .bid-form-phone {
@@ -490,10 +511,68 @@ tr:nth-child(even) {
   padding: 20px;
 }
 
-.bid-form-phone-desc{
-  margin-bottom: 20px;
+.bid-form-phone-desc {
+  padding-left: 30px;
 }
 
 .bid-form-phone-item {
   font-size: 26px;
+}
+
+.bid-form-phone-item a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.bid-contact-form {
+  display: flex;
+  align-items: baseline;
+  justify-content: end;
+  gap: 20px;
+}
+
+.bid-contact-form input[type="text"] {
+  border: none;
+  border-radius: 0;
+  padding: 12px;
+}
+
+.bid-contact-form input[type="submit"] {
+  border: none;
+  border-radius: 0;
+  padding: 16px 25px;
+  width: 100%;
+  color: #fff;
+  font-weight: 500;
+  background-color: #ed0050;
+  text-transform: uppercase;
+}
+
+.bid-contact-form input[type="submit"]:hover {
+  transform: scale(1.02);
+}
+
+.bid-contact-form input[type="tel"] {
+  border: none;
+  border-radius: 0;
+  padding: 12px;
+}
+
+.politic {
+  margin-top: 60px;
+  margin-bottom: 22px;
+}
+
+.politic p {
+  text-align: center;
+}
+
+.politic a {
+  /* text-decoration: none; */
+  color: #ffffffd4;
+}
+
+.politic a:hover {
+  text-decoration: none;
+  color: #fff;
 }

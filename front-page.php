@@ -756,15 +756,18 @@ get_header();
         <div class="row bid-form-container">
             <div class="col bid-form-phone">
                 <p class="text-center bid-form-phone-desc">Позвонить нам по телефонам:</p>
-                <p class="text-center bid-form-phone-item">8 (495) 142 86 56</p>
-                <p class="text-center bid-form-phone-item">8 (977) 715 58 00</p>
+                <p class="text-center bid-form-phone-item"><a href="tel:+84951428656">8 (495) 142 86 56</a></p>
+                <p class="text-center bid-form-phone-item"><a href="tel:+89777155800">8 (977) 715 58 00</a></p>
             </div>
             <div class="col-9">
-                <p class="text-center bid-form-phone-desc">Или оставьте данные и мы перезвоним вам</p>
-                <div class="bid-form">Form</div>
+                <p class="bid-form-phone-desc">Или оставьте данные и мы вам перезвоним:</p>
+                <div class="bid-form">
+                    <?php echo do_shortcode('[contact-form-7 id="ea51bf8" title="Форма в блоке заявки"]'); ?>
+                </div>
             </div>
         </div>
     </div>
+    <div class="politic"><p>Согласие на обработку <a href="#">персональных данных.</a></p></div>
 </div>
 
 <main id="primary" class="site-main">
