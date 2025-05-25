@@ -747,7 +747,7 @@ get_header();
                 <p class="text-center">Проект вашего потолка</p>
             </div>
             <div class="col bid-option">
-                <p class="text-center">Точечнык светильники</p>
+                <p class="text-center">Точечные светильники</p>
             </div>
             <div class="col bid-option">
                 <p class="text-center">Чистый монтаж</p>
@@ -755,7 +755,7 @@ get_header();
         </div>
         <div class="row bid-form-container">
             <div class="col bid-form-phone">
-                <p class="text-center bid-form-phone-desc">Позвонить нам по телефонам</p>
+                <p class="text-center bid-form-phone-desc">Позвонить нам по телефонам:</p>
                 <p class="text-center bid-form-phone-item">8 (495) 142 86 56</p>
                 <p class="text-center bid-form-phone-item">8 (977) 715 58 00</p>
             </div>
