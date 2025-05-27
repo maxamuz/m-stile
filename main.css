@@ -236,7 +236,7 @@ html {
     position: relative;
     color: #ed0050;
   }
-  a.active:after {
+  /* a.active:after {
     content: "";
     position: absolute;
     bottom: -5px;
@@ -244,6 +244,16 @@ html {
     width: 100%;
     height: 2px;
     background: #ed0050;
+  } */
+  .menu-item a img {
+    border: 1px solid #3498db;
+    padding: 5px;
+  }
+  a.active img {
+    border-color: #ed0050;
+  }
+  a .menu-image-title {
+    margin-top: 10px;
   }
 }
 
@@ -377,6 +387,11 @@ html {
   text-transform: uppercase;
 }
 
+.accordion-body ol > li > strong {
+  padding: 10px 0;
+  display: block;
+}
+
 /* О нас */
 
 .about {
@@ -491,7 +506,7 @@ tr:nth-child(even) {
 }
 
 .bid-container-option {
-  padding: 50px 0;
+  padding: 15px 0;
 }
 
 .bid-form-container {
@@ -575,4 +590,53 @@ tr:nth-child(even) {
 .politic a:hover {
   text-decoration: none;
   color: #fff;
+}
+
+/* Футер */
+
+.footer-top {
+  padding: 65px 0;
+  h3 {
+    text-align: center;
+  }
+  .footer-top-phone-item a {
+    text-decoration: none;
+    color: #00507f;
+    font-size: 20px;
+  }
+  .footer-top-email-item a {
+    text-decoration: none;
+    color: #00507f;
+    font-size: 20px;
+    padding: 30px 0;
+    display: block;
+  }
+  .social-wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+}
+
+.main-navigation-footer {
+  ul {
+    list-style: none;
+    display: grid;
+    grid-template-columns: 145px 145px;
+  }
+  li {
+    padding: 5px;
+  }
+  a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #00507f;
+    &:hover {
+      text-decoration: underline;
+      color: #024d78ba;
+    }
+  }
+  .footer-map {
+    margin-top: 20px;
+  }
 }
