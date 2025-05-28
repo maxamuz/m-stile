@@ -29,7 +29,7 @@ get_header();
             <img src="<?php echo get_template_directory_uri() . '/img/fon33.jpg' ?>" class="d-block w-100" alt="...">
             <div class="carousel-caption d-none d-md-block">
                 <h3>Натяжные потолки <span class="carousel-caption-header">в Минске <br>с установкой</span></h3>
-                <p class="carousel-caption-price">от <span>479 <span
+                <p class="carousel-caption-price">от <span>20 <span
                             class="carousel-caption-currency">руб/м2</span></span>
                 </p>
                 <div class="carousel-caption-description">
@@ -137,7 +137,6 @@ get_header();
 <div class="types-of-ceilings">
     <div class="container">
         <h3 class="home-title">Виды натяжных потолков</h3>
-
         <div class="custom-menu-container">
             <?php
             wp_nav_menu([
@@ -146,7 +145,6 @@ get_header();
                 'container' => false,
             ]);
             ?>
-
             <div class="menu-content-container" id="menu-content-container">
                 <!-- Здесь будет подгружаться контент -->
             </div>
@@ -157,7 +155,7 @@ get_header();
 
 <div class="calculator">
     <div class="container">
-        <div class="row">
+        <div class="row calculator-row">
             <div class="col">
                 <div class="calculator-content">
                     <h2 class="calculator-content-title">Что входит в стоимость натяжного потолка под ключ?</h2>
@@ -185,7 +183,7 @@ get_header();
 <section class="about">
     <div class="container">
         <h3 class="home-title">О компании</h3>
-        <div class="row">
+        <div class="row about-row">
             <div class="col">
                 <div class="about-img">
                     <img src="<?php echo get_template_directory_uri() . '/img/montaj-potilka.png' ?>" alt="О компании">
@@ -755,7 +753,7 @@ get_header();
         </div>
         <div class="row bid-form-container">
             <div class="col bid-form-phone">
-                <p class="text-center bid-form-phone-desc">Позвонить нам по телефонам:</p>
+                <p class="text-center bid-form-phone-desc">Позвонитe нам по телефонам:</p>
                 <p class="text-center bid-form-phone-item"><a href="tel:+84951428656">8 (495) 142 86 56</a></p>
                 <p class="text-center bid-form-phone-item"><a href="tel:+89777155800">8 (977) 715 58 00</a></p>
             </div>

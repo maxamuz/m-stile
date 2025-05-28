@@ -227,8 +227,10 @@ function load_menu_content_callback()
 
 			echo '<div class="menu-content">';
 			echo $thumbnail;
-			echo '<div class="content-text">';
+			echo '<div class="content-text"> <div class="content-top-text">';
 			echo '<h3>' . get_the_title($page_id) . '</h3>';
+			echo '<div> Дополнительная информация </div>';
+			echo '</div>';
 			echo '<div class="excerpt">' . $excerpt . '</div>';
 			echo '<a href="' . get_permalink($page_id) . '" class="read-more">Подробнее</a>';
 			echo '</div></div>';

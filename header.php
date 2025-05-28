@@ -30,7 +30,7 @@
 
 			<div class="top-header">
 				<div class="container">
-					<div class="row align-items-center">
+					<div class="row align-items-center top-header-row">
 						<div class="col">
 							<div class="site-branding">
 								<?php
@@ -59,12 +59,42 @@
 							<p>г. Минск <br>и Минская область</p>
 							<p>Ежедневно с 9.00 до 18.00</p>
 						</div>
-						<div class="col phone-colum">
+						<div class="wrapper-phone-social-mobile">
+							<div class="col phone-colum">
+								<p><a href="tel:+74951428656" class="phone-item">8 (495) 142 86 56</a></p>
+								<p><a href="tel:+79777155800" class="phone-item">8 (977) 715 58 00</a></p>
+								<p><a href="mailto:shemetov.edik@mail.ru" class="phone-item">shemetov.edik@mail.ru</a>
+								</p>
+							</div>
+							<div class="col social-wrapper">
+								<div class="social-item">
+									<a href="https://www.instagram.com/np__style?igsh=bzFlbG1tOWFkdWF5"><img
+											src="<?php echo get_template_directory_uri() . '/img/insta.jpg' ?>" alt=""
+											class="social-img"></a>
+								</div>
+								<div class="social-item">
+									<a href="https://www.tiktok.com/@np__style?_t=ZM-8wIVr2z9WMg&_r=1"><img
+											src="<?php echo get_template_directory_uri() . '/img/tik-tok.jpg' ?>" alt=""
+											class="social-img"></a>
+								</div>
+								<div class="social-item">
+									<a href="#"><img
+											src="<?php echo get_template_directory_uri() . '/img/whatsapp.jpg' ?>"
+											alt="" class="social-img"></a>
+								</div>
+								<div class="social-item">
+									<a href="#"><img src="<?php echo get_template_directory_uri() . '/img/viber.jpg' ?>"
+											alt="" class="social-img"></a>
+								</div>
+							</div>
+						</div>
+						<div class="col phone-colum phone-colum-mobile">
 							<p><a href="tel:+74951428656" class="phone-item">8 (495) 142 86 56</a></p>
 							<p><a href="tel:+79777155800" class="phone-item">8 (977) 715 58 00</a></p>
-							<p><a href="mailto:shemetov.edik@mail.ru" class="phone-item">shemetov.edik@mail.ru</a></p>
+							<p><a href="mailto:shemetov.edik@mail.ru" class="phone-item">shemetov.edik@mail.ru</a>
+							</p>
 						</div>
-						<div class="col social-wrapper">
+						<div class="col social-wrapper social-wrapper-mobile">
 							<div class="social-item">
 								<a href="https://www.instagram.com/np__style?igsh=bzFlbG1tOWFkdWF5"><img
 										src="<?php echo get_template_directory_uri() . '/img/insta.jpg' ?>" alt=""
