@@ -1,4 +1,32 @@
 <?php
+
+require_once get_template_directory() . '/inc/theme-options.php';
+
+add_action('after_setup_theme', 'crb_load');
+function crb_load()
+{
+	require_once('vendor/autoload.php');
+	\Carbon_Fields\Carbon_Fields::boot();
+}
+
+function move_custom_carbon_fields_menu()
+{
+	// Удаляем старый пункт меню по его slug (часть URL после page=)
+	remove_menu_page('crb_carbon_fields_container_e11e346c.php');
+
+	// Добавляем новый пункт в нужное место
+	add_menu_page(
+		'Настройки темы',                     // Заголовок страницы
+		'Настройки темы',                     // Название в меню
+		'manage_options',                     // Права доступа
+		'crb_carbon_fields_container_e11e346c.php', // Тот же slug
+		'',                                   // Функция отображения (не нужна)
+		'dashicons-admin-generic',            // Иконка
+		3                                     // Позиция (3 - после "Записей")
+	);
+}
+add_action('admin_menu', 'move_custom_carbon_fields_menu', 999);
+
 /**
  * npstyle functions and definitions
  *

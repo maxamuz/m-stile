@@ -153,7 +153,7 @@ get_header();
     </div>
 </div>
 
-<div class="calculator">
+<div id="calculator-block" class="calculator">
     <div class="container">
         <div class="row calculator-row">
             <div class="col">
@@ -765,7 +765,9 @@ get_header();
             </div>
         </div>
     </div>
-    <div class="politic"><p>Согласие на обработку <a href="#">персональных данных.</a></p></div>
+    <div class="politic">
+        <p>Согласие на обработку <a href="#">персональных данных.</a></p>
+    </div>
 </div>
 
 <main id="primary" class="site-main">

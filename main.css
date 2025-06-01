@@ -75,6 +75,89 @@ select:focus {
   position: absolute;
 }
 
+/* Гамбургер кнопка */
+.menu-toggle {
+    background: none;
+    border: none;
+    padding: 20px 15px; /* Увеличил padding для большей кликабельной области */
+    cursor: pointer;
+    outline: none;
+    display: inline-block;
+    transition: all 0.4s ease;
+    position: relative;
+    z-index: 100;
+}
+
+.hamburger-box {
+    width: 40px; /* Увеличил размер */
+    height: 24px;
+    display: inline-block;
+    position: relative;
+}
+
+.hamburger-inner {
+    display: block;
+    top: 50%;
+    margin-top: -2px;
+}
+
+.hamburger-inner, 
+.hamburger-inner::before, 
+.hamburger-inner::after {
+    width: 45px; /* Увеличил размер */
+    height: 4px; /* Увеличил толщину линий */
+    background-color: #00507f;
+    border-radius: 4px;
+    position: absolute;
+    transition: all 0.4s ease; /* Увеличил время анимации */
+}
+
+.hamburger-inner::before, 
+.hamburger-inner::after {
+    content: "";
+    display: block;
+}
+
+.hamburger-inner::before {
+    top: -12px; /* Подправил позиционирование */
+}
+
+.hamburger-inner::after {
+    bottom: -12px; /* Подправил позиционирование */
+}
+
+/* Анимация при открытии - теперь крестик будет ровным */
+.menu-toggle[aria-expanded="true"] .hamburger-inner {
+    transform: rotate(135deg);
+    top: 50%;
+    margin-top: -2px;
+}
+
+.menu-toggle[aria-expanded="true"] .hamburger-inner::before {
+    top: 0;
+    transform: rotate(90deg);
+    opacity: 1;
+}
+
+.menu-toggle[aria-expanded="true"] .hamburger-inner::after {
+    bottom: 0;
+    transform: rotate(90deg);
+    opacity: 0;
+}
+
+.screen-reader-text {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
+
+/* Кнопка end */
+
 .buttom-item a {
   color: #fff;
   text-decoration: none;
