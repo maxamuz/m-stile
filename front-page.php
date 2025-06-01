@@ -220,7 +220,7 @@ get_header();
                     alt="Звонок и заявка" class="cooperation-img">
                 <p class="cooperation-text">Звонок или заявка на сайте</p>
             </div>
-            <div class="col cooperation-item">
+            <div class="col cooperation-item cooperation-item-reverse">
                 <p class="cooperation-text">Бесплатный выезд замерщика</p>
                 <img src="<?php echo get_template_directory_uri() . '/img/cooperation-zamer.png' ?>"
                     alt="Бесплатный замер" class="cooperation-img">
@@ -233,7 +233,7 @@ get_header();
                     Для Вашего удобства, заключение договора сразу на объекте
                 </span>
             </div>
-            <div class="col cooperation-item">
+            <div class="col cooperation-item cooperation-item-reverse">
                 <p class="cooperation-text">Производство от 1 до 3 дней</p>
                 <img src="<?php echo get_template_directory_uri() . '/img/cooperation-hour.png' ?>" alt="Сжатые сроки"
                     class="cooperation-img">
@@ -243,7 +243,7 @@ get_header();
                     alt="Быстрый монтаж" class="cooperation-img">
                 <p class="cooperation-text">Монтаж от 2-х часов</p>
             </div>
-            <div class="col cooperation-item">
+            <div class="col cooperation-item cooperation-item-reverse">
                 <p class="cooperation-text">Уборка на объекте</p>
                 <img src="<?php echo get_template_directory_uri() . '/img/cooperation-uborka.png' ?>"
                     alt="Чистота на объекте" class="cooperation-img">
@@ -757,7 +757,7 @@ get_header();
                 <p class="text-center bid-form-phone-item"><a href="tel:+84951428656">8 (495) 142 86 56</a></p>
                 <p class="text-center bid-form-phone-item"><a href="tel:+89777155800">8 (977) 715 58 00</a></p>
             </div>
-            <div class="col-9">
+            <div class="col-9 bid-col-9">
                 <p class="bid-form-phone-desc">Или оставьте данные и мы вам перезвоним:</p>
                 <div class="bid-form">
                     <?php echo do_shortcode('[contact-form-7 id="ea51bf8" title="Форма в блоке заявки"]'); ?>

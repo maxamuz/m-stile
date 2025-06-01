@@ -192,24 +192,20 @@ img.social-img:hover {
 .our-change {
   background-color: #edf7ff;
   padding-bottom: 35px;
-  .row {
-    .col {
-      .card {
-        border: none;
-        width: 14rem;
-        align-items: center;
-        background-color: inherit;
-        .card-img-top {
-          width: 55%;
-          border: 1px solid #ed0050;
-          padding: 30px;
-          border-radius: 0;
-          margin-bottom: 20px;
-        }
-        .card-text {
-          text-align: center;
-        }
-      }
+  .card {
+    border: none;
+    width: 14rem;
+    align-items: center;
+    background-color: inherit;
+    .card-img-top {
+      width: 55%;
+      border: 1px solid #ed0050;
+      padding: 30px;
+      border-radius: 0;
+      margin-bottom: 20px;
+    }
+    .card-text {
+      text-align: center;
     }
   }
 }
@@ -676,7 +672,7 @@ tr:nth-child(even) {
     gap: 5px;
   }
   #menu-content-container .menu-content img {
-    min-width: 400px;
+    min-width: 390px;
   }
   .menu-content-container .menu-content {
     flex-direction: column;
@@ -734,15 +730,14 @@ tr:nth-child(even) {
     flex-direction: column;
   }
   .our-change {
-    & .row {
-      & .col {
-        & .card {
-          .card-img-top {
-            width: 70%;
-          }
-        }
-      }
+    .card-img-top {
+      width: 70%;
     }
+  }
+  .our-change .row .col:last-child:nth-child(odd) {
+    grid-column: 1 / -1; /* Растягиваем на всю ширину */
+    justify-self: center; /* Центрируем содержимое */
+    max-width: 50%; /* Ограничиваем ширину, чтобы не растягивалось */
   }
   .about-row {
     flex-direction: column;
@@ -758,5 +753,59 @@ tr:nth-child(even) {
   }
   .bid-container-option {
     padding: 0;
+  }
+  .cooperation-item-reverse {
+    flex-direction: column-reverse;
+  }
+  .text-lite {
+    display: none;
+  }
+  .cooperation-item {
+    margin-bottom: 15px;
+  }
+  .carousel-control-prev,
+  .carousel-control-next {
+    display: none;
+  }
+  .accordion-body {
+    padding-left: 30px;
+  }
+  .accordion-body ol {
+    margin: 0;
+    padding: 0;
+  }
+  .buttom-item a {
+    width: 100%;
+  }
+  .center p {
+    padding-top: 15px;
+    text-align: center;
+  }
+  .bid {
+    padding-bottom: 35px;
+  }
+  .bid-contact-form {
+    flex-direction: column;
+    gap: 0;
+  }
+  .bid-contact-form input[type="submit"] {
+    margin-top: 20px;
+  }
+  .bid-col-9 {
+    width: 100%;
+  }
+  .bid-form-phone-desc {
+    text-align: center;
+  }
+  .politic {
+    margin: 0;
+    padding: 0;
+  }
+  .social-wrapper {
+    border-bottom: 1px solid #00507f;
+    padding-bottom: 20px;
+  }
+  .footer-top-content-menu {
+    border-bottom: 1px solid #00507f;
   }
 }

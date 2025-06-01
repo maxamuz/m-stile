@@ -69,8 +69,8 @@
 							<div class="col social-wrapper">
 								<div class="social-item">
 									<a href="https://www.instagram.com/np__style?igsh=bzFlbG1tOWFkdWF5"><img
-											src="<?php echo get_template_directory_uri() . '/img/insta.jpg' ?>" alt=""
-											class="social-img"></a>
+											src="<?php echo get_template_directory_uri() . '/img/social-in.jpg' ?>"
+											alt="Инстаграмм" class="social-img"></a>
 								</div>
 								<div class="social-item">
 									<a href="https://www.tiktok.com/@np__style?_t=ZM-8wIVr2z9WMg&_r=1"><img

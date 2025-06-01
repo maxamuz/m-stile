@@ -45,7 +45,7 @@
 			</div>
 			<div class="col">
 				<h3 class="home-title-paragraph">Меню</h3>
-				<div class="footer-top-content">
+				<div class="footer-top-content footer-top-content-menu">
 					<nav id="site-navigation" class="main-navigation-footer">
 						
 							<button class="menu-toggle" aria-controls="primary-menu"
