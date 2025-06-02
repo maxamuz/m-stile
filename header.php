@@ -119,7 +119,7 @@
 						</div>
 						<div class="col button-wrapper">
 							<div class="buttom-item">
-								<a href="#" class="call-bottom">Вызвать замерщика</a>
+								<a href="#" class="call-bottom popmake-103">Вызвать замерщика</a>
 							</div>
 							<div class="buttom-item">
 								<a href="#calculator-block" class="calc-bottom">Калькулятор</a>

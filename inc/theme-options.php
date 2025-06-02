@@ -14,7 +14,10 @@ function crb_attach_theme_options()
                 ->set_width(33),
             Field::make('text', 'crb_phone', 'Телефон')
                 ->set_width(33),
-            Field::make('text', 'crb_vk', 'Вконтакте'),
+            Field::make('text', 'crb_vk', 'Вконтакте')
+                ->set_width(33),
+            Field::make('text', 'crb_w_sapp', 'Вконтакте')
+                ->set_width(33),
         ])
         ->add_tab('Вопросы', [
             Field::make('text', 'crb_q', 'Вопрос')

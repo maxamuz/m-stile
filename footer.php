@@ -34,12 +34,12 @@
 								class="social-img"></a>
 					</div>
 					<div class="social-item">
-						<a href="#"><img src="<?php echo get_template_directory_uri() . '/img/social-whats.jpg' ?>" alt="Ватсап"
-								class="social-img"></a>
+						<a href="#"><img src="<?php echo get_template_directory_uri() . '/img/social-whats.jpg' ?>"
+								alt="Ватсап" class="social-img"></a>
 					</div>
 					<div class="social-item">
-						<a href="#"><img src="<?php echo get_template_directory_uri() . '/img/social-vaiber.jpg' ?>" alt="Вайбер"
-								class="social-img"></a>
+						<a href="#"><img src="<?php echo get_template_directory_uri() . '/img/social-vaiber.jpg' ?>"
+								alt="Вайбер" class="social-img"></a>
 					</div>
 				</div>
 			</div>
@@ -47,18 +47,18 @@
 				<h3 class="home-title-paragraph">Меню</h3>
 				<div class="footer-top-content footer-top-content-menu">
 					<nav id="site-navigation" class="main-navigation-footer">
-						
-							<button class="menu-toggle" aria-controls="primary-menu"
-								aria-expanded="false"><?php esc_html_e('Меню', 'npstyle'); ?></button>
-							<?php
-							wp_nav_menu(
-								array(
-									'theme_location' => 'menu-1',
-									'menu_id' => 'primary-menu',
-								)
-							);
-							?>
-						
+
+						<button class="menu-toggle" aria-controls="primary-menu"
+							aria-expanded="false"><?php esc_html_e('Меню', 'npstyle'); ?></button>
+						<?php
+						wp_nav_menu(
+							array(
+								'theme_location' => 'menu-1',
+								'menu_id' => 'primary-menu',
+							)
+						);
+						?>
+
 					</nav>
 				</div>
 			</div>
@@ -81,17 +81,12 @@
 
 <footer id="colophon" class="site-footer">
 	<div class="site-info">
-		<a href="<?php echo esc_url(__('https://wordpress.org/', 'npstyle')); ?>">
+		<p>
 			<?php
-			/* translators: %s: CMS name, i.e. WordPress. */
-			printf(esc_html__('Proudly powered by %s', 'npstyle'), 'WordPress');
-			?>
-		</a>
-		<span class="sep"> | </span>
-		<?php
-		/* translators: 1: Theme name, 2: Theme author. */
-		printf(esc_html__('Theme: %1$s by %2$s.', 'npstyle'), 'npstyle', '<a href="https://wp-proger.ru/">Alex</a>');
-		?>
+			echo date("Y");
+			?> © Все права защищены.
+		</p>
+	    <p>Разработано: <a href="https://wp-proger.ru/">Wp-proger</a></p>
 	</div><!-- .site-info -->
 </footer><!-- #colophon -->
 </div><!-- #page -->

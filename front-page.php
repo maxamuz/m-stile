@@ -34,7 +34,7 @@ get_header();
                 </p>
                 <div class="carousel-caption-description">
                     <p class="carousel-caption-description-text">Узнайте точную стоимость вашего проекта</p>
-                    <a href="#" class="carousel-caption-description-link">Узнать стоимость</a>
+                    <a href="#bid" class="carousel-caption-description-link">Узнать стоимость</a>
                 </div>
 
             </div>
@@ -733,7 +733,7 @@ get_header();
     </div>
 </div>
 
-<div class="bid">
+<div id="bid" class="bid">
     <div class="container">
         <h3 class="text-center home-title home-title-lite">Оставьте заявку<span class="bid-desc">на замер и получите 4
                 бесплатные опции</span></h3>
