@@ -19,12 +19,6 @@ function crb_attach_theme_options()
             Field::make('text', 'crb_w_sapp', 'Вконтакте')
                 ->set_width(33),
         ])
-        ->add_tab('Вопросы', [
-            Field::make('text', 'crb_q', 'Вопрос')
-                ->set_width(33),
-            Field::make('text', 'crb_a', 'Ответ')
-                ->set_width(33),
-        ])
         ->add_tab('Слайдер "Отзывы"', [
             Field::make('complex', 'rewievs_slider', __('Slider'))
                 ->setup_labels([

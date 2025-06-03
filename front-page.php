@@ -153,7 +153,7 @@ get_header();
     </div>
 </div>
 
-<div id="calculator-block" class="calculator">
+<div class="calculator">
     <div class="container">
         <div class="row calculator-row">
             <div class="col">

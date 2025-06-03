@@ -524,6 +524,7 @@ html {
 
 .home-title-lite {
   color: #fff;
+  padding: 35px 0 20px 0;
 }
 
 .accordion-item {
@@ -607,8 +608,55 @@ tr:nth-child(even) {
 }
 
 .bid-option p {
-  text-decoration: underline;
+  border: 1px solid #fff;
+  padding: 5px;
 }
+/* Анимация */
+
+.bid-option {
+    position: relative;
+    overflow: hidden; /* Скрыть часть полоски, выходящую за пределы */
+    padding: 0; 
+    margin: 0 5px;
+}
+
+.bid-option p {
+    position: relative;
+    z-index: 1; /* Убедитесь, что текст выше полоски */
+}
+
+.bid-option::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: -100%; /* Начальная позиция за пределами слева */
+    width: 100%; /* Ширина полоски */
+    height: 250%; /* Высота полоски */
+    background: linear-gradient(to top, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.08) 50%), 
+                linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.08) 50%); /* Вертикальный градиент с уменьшенной прозрачностью */
+    transform: translateY(-50%) rotate(-50deg); /* Центрирование по вертикали и наклон */
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%); /* Скошенная форма */
+    animation: slide 2s linear infinite; /* Анимация */
+    z-index: 0; /* Полоска под текстом */
+}
+
+@keyframes slide {
+    0% {
+        left: -100%; /* Начало анимации */
+    }
+    25% {
+        left: 0; /* Полоска на начале параграфа */
+    }
+    75% {
+        left: 100%; /* Полоска выходит за пределы справа */
+    }
+    100% {
+        left: 100%; /* Конец анимации */
+    }
+}
+
+
+/* Анимация END */
 
 .bid-form {
   padding-left: 30px;
@@ -906,6 +954,7 @@ footer#colophon {
   }
   .calculator-wrapper {
     flex-direction: column;
+    gap: 0;
   }
   .our-change {
     .card-img-top {
@@ -931,6 +980,8 @@ footer#colophon {
   }
   .bid-container-option {
     padding: 0;
+    flex-direction: column;
+    gap: 10px;
   }
   .cooperation-item-reverse {
     flex-direction: column-reverse;
