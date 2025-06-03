@@ -37,5 +37,18 @@ function crb_attach_theme_options()
                     Field::make('image', 'photo', __('Фотография'))
                         ->set_value_type('url'),
                 ))
+        ])
+        ->add_tab('Часто задаваемые вопросы', [
+            Field::make('complex', 'crb_faqs', __('Часто задаваемые вопросы'))
+                ->setup_labels([
+                    'plural_name' => 'Вопросы',
+                    'singular_name' => 'Вопрос',
+                ])
+                ->add_fields(array(
+                    Field::make('text', 'crb_question', __('Вопрос')),
+                    Field::make('rich_text', 'crb_answer', __('Ответ')),
+                )),
         ]);
+    ;
+
 }

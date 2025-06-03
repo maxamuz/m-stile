@@ -322,9 +322,5 @@ function get_page_id_by_url_callback()
 add_action('wp_ajax_get_page_id_by_url', 'get_page_id_by_url_callback');
 add_action('wp_ajax_nopriv_get_page_id_by_url', 'get_page_id_by_url_callback');
 
-add_action('wpcf7_before_send_mail', function ($contact_form) {
-	$submission = WPCF7_Submission::get_instance();
-	$data = $submission->get_posted_data();
-	error_log(print_r($data, true)); // Проверьте debug.log
-});
+
 
