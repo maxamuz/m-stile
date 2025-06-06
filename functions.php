@@ -253,12 +253,28 @@ function load_menu_content_callback()
 				? get_the_post_thumbnail($page_id, 'medium')
 				: '<img src="' . get_template_directory_uri() . '/img/default-thumbnail.png" alt="Default Image">';
 
+			// Получаем связанные записи
+			$related_posts = carbon_get_post_meta($page_id, 'crb_related_posts');
+
 			echo '<div class="menu-content">';
 			echo $thumbnail;
 			echo '<div class="content-text"> <div class="content-top-text">';
 			echo '<h3>' . get_the_title($page_id) . '</h3>';
-			echo '<div> Дополнительная информация </div>';
-			echo '</div>';
+
+			// Выводим ссылки на связанные записи
+			if ($related_posts) {
+				echo '<div class="content-additional-info">';
+				foreach ($related_posts as $related_post_id) {
+					$related_post_title = get_the_title($related_post_id);
+					$related_post_link = get_permalink($related_post_id);
+					echo '<p><a href="' . esc_url($related_post_link) . '">' . esc_html($related_post_title) . '</a></p>';
+				}
+				echo '</div>'; // Закрываем блок дополнительных полей
+			} else {
+				//echo '<div>Связанные записи отсутствуют.</div>';
+			}
+
+			echo '</div>'; // Закрываем content-top-text
 			echo '<div class="excerpt">' . $excerpt . '</div>';
 			echo '<a href="' . get_permalink($page_id) . '" class="read-more">Подробнее</a>';
 			echo '</div></div>';
@@ -269,6 +285,8 @@ function load_menu_content_callback()
 }
 add_action('wp_ajax_load_menu_content', 'load_menu_content_callback');
 add_action('wp_ajax_nopriv_load_menu_content', 'load_menu_content_callback');
+
+
 
 // Получение ID страницы по её URL
 function get_page_id_by_path_callback()

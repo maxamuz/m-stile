@@ -46,3 +46,27 @@ function crb_attach_theme_options()
     ;
 
 }
+
+add_action('carbon_fields_register_fields', 'crb_attach_page_meta');
+function crb_attach_page_meta()
+{
+    Container::make('post_meta', __('Дополнительные поля'))
+        ->where('post_type', '=', 'page') // Привязываем к страницам
+        ->add_fields(array(
+            Field::make('multiselect', 'crb_related_posts', __('Связанные записи'))
+                ->set_options(function () {
+                    $posts = get_posts(array(
+                        'post_type' => 'post', // Замените на нужный тип поста
+                        'numberposts' => -1,
+                        'fields' => 'ids' // Получаем только ID
+                    ));
+
+                    // Создаем ассоциативный массив для опций
+                    $options = [];
+                    foreach ($posts as $post_id) {
+                        $options[$post_id] = get_the_title($post_id);
+                    }
+                    return $options;
+                }),
+        ));
+}

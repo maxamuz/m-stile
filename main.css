@@ -371,7 +371,7 @@ html {
       /* font-family: "Montserrat", sans-serif; */
       letter-spacing: 0.05rem;
     }
-    a {
+    a.read-more {
       text-decoration: none;
       position: absolute;
       bottom: 0;
@@ -629,14 +629,14 @@ tr:nth-child(even) {
     content: '';
     position: absolute;
     top: 50%;
-    left: -100%; /* Начальная позиция за пределами слева */
+   /* left: -100%;  Начальная позиция за пределами слева */
     width: 100%; /* Ширина полоски */
-    height: 250%; /* Высота полоски */
-    background: linear-gradient(to top, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.08) 50%), 
-                linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.08) 50%); /* Вертикальный градиент с уменьшенной прозрачностью */
+    height: 550%; /* Высота полоски */
+    background: linear-gradient(to top, rgba(255, 255, 255, 0) 25%, rgba(255, 255, 255, 0.1) 50%), 
+                linear-gradient(to bottom, rgba(255, 255, 255, 0) 23%, rgba(255, 255, 255, 0.1) 50%);/* Вертикальный градиент с уменьшенной прозрачностью */
     transform: translateY(-50%) rotate(-50deg); /* Центрирование по вертикали и наклон */
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%); /* Скошенная форма */
-    animation: slide 2s linear infinite; /* Анимация */
+    animation: slide 2s linear infinite;  /*Анимация */
     z-index: 0; /* Полоска под текстом */
 }
 
